@@ -7,7 +7,7 @@ const mysql = require('mysql2/promise')
 //const whiteList = ['https://drive.google.com/file/d/1pAYYgFQmWrSEEUNMAWHr9nfgVdOYGOkf/view?'];
 
 
-//app.use(cors({origin : whiteList}));
+app.use(cors());
 var connection;
 
 app.get('/api/products', async(req, res) => {
