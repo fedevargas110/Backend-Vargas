@@ -23,7 +23,7 @@ app.get('/api/variedades', async(req, res)=>{
   res.send(row);
 })
 
-app.use('/', express.static('Front'));
+app.use('/', express.static('productos.html'));
 
 
 app.listen(port, async() => {
