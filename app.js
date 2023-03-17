@@ -23,6 +23,11 @@ app.get('/api/variedades', async(req, res)=>{
   res.send(row);
 })
 
+app.get('/api/variedades', async(req, res)=>{
+  const [row, fields] = await connection.execute('SELECT * FROM variedades')
+  res.send(row);
+})
+
 app.use('/', express.static('productos.html'));
 
 
