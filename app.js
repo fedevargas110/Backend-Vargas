@@ -35,7 +35,7 @@ app.listen(port, async() => {
   connection = await mysql.createConnection({
     host     : 'containers-us-west-121.railway.app',
     user     : 'root',
-    password : 'p4bV5TKxZRsOxoRr0OIje',
+    password : '4bV5TKxZRsOxoRr0OIje',
     port     : '7285',
     database : 'railway',
     insecureAuth : true
